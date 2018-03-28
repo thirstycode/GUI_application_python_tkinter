@@ -16,7 +16,7 @@ win.title("Convertor")
 input1 = StringVar()
 
 # label allows to insert text and photos (**for photos we need pillow)
-w = Label(win,text="This Is Distance Convertor! Entry Value Here(In km) & Press Convert")
+w = Label(win,text="This Is Weight Convertor! Entry Value Here(In kg) & Press Convert")
 # grid specifies the position of objects to be displayed
 w.grid(row = 0 , column = 0)
 
@@ -49,5 +49,5 @@ text3.grid(row = 5,column = 0)
 w2 = Label(win,text="@developed BY Pratik")
 w2.grid(row = 6 , column = 1)
 
-
+# keeps window running
 win.mainloop()

@@ -22,9 +22,13 @@ w.grid(row = 0 , column = 0)
 
 # function
 def conversion():
-    text1.insert(END, str(float(input1.get())*1000) + " grams")
-    text2.insert(END, str(float(input1.get())*2.20462) + " pounds")
-    text3.insert(END, str(float(input1.get())*35.274) + " ounches")
+     # we use try-except because variable input1 not always has the expected value
+    try:
+        text1.insert(END, str(float(input1.get())*1000) + " grams")
+        text2.insert(END, str(float(input1.get())*2.20462) + " pounds")
+        text3.insert(END, str(float(input1.get())*35.274) + " ounches")
+    except:
+        pass
 
 # input box declaration
 # text variable is variable assigned to text typed in textbox
